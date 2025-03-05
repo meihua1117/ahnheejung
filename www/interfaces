@@ -1,0 +1,15 @@
+# interfaces(5) file used by ifup(8) and ifdown(8)
+# Include files from /etc/network/interfaces.d:
+source-directory /etc/network/interfaces.d
+
+#auto wlan1
+#iface wlan1 inet dhcp
+#wpa-ssid xunlong_orangepi
+#wpa-psk xunlong_orangepi_12345678
+
+auto eth0      # ou auto enp0s7 (see  ifconfig)
+iface eth0 inet static
+        address 192.168.0.114
+        netmask 255.255.255.0
+        gateway 192.168.0.1
+

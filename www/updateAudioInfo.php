@@ -5,7 +5,11 @@
     $content = "";
     $port = "";
     $audioes = "";
-
+    $seed_string = "RJCC8siBxYxHjMhPvElLxkBFlARNApSIZQgIdhlMnIlNwt0OlwhG1UFORYzF8IwaY4gK2kyGY0DIV8xGCpBEatiFt0iWR1gJ6VxF8oRLjAyElEyNc4AZicwEngiGJoyUtAUOy1SESoDW10QXOkQMzVlBoICLrUgMBsxFmUjaHojAAwQOIEyD5MhGWhxBnowVFgSK10CQA4HGk8iK28AD8IQBfQhT0cQXKIgLpERLi4TMpxSOBAQDlghHWsAB1EFGDICDoUQGRgyBFkjTm4wLSdQIIgjCCEDDFBSB48iFVEVHEsBJ3B1Ln0xCjsTLMYyNIE3S0wFHi8iGJkCNYFxByhhDvYDWehxPCIlNVcBXrEiV48SKvQxGhsBUvslXuMCPQllG1skGLhFBDASUekgKq4COqQHBR8iK2UCCyIxOfQSVLQgDNsTA24xFQYRJTxxDdcgDLMwDRIAHIUlWMAiEE4BFacFC5IzfbwhBSxAGPklGqAAIdtxBaZBBDMQGpAxFtMEHwoxFTowGb1QB6cSV3AgIMgyJZERMLsiB"; // random seed string
+    if (isset($_POST['key']))
+        $key = $_POST['key'];
+    else
+        $key = $sead_string;
     if (isset($_POST['content']))
         $content = $_POST['content'];
     if (isset($_POST['port']))
